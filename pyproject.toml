@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dataset_splitter"
+version = "0.0.1"
+authors = [
+  { name="River Martin" },
+]
+dependencies=[
+    'pandas',
+    'openpyxl',
+    'datasets',
+]
+description = "A package that creates a 75/15/15 train/test/validate split of the Web Of Science dataset, using the natural language (string) domain and area labels (for training text-to-text and sequence-to-sequence style models for hierarchical classification)."
+readme = "README.md"
+requires-python = ">=3.8"
